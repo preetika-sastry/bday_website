@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+* { padding: 0; margin: 0; }
+
+body, html
+{
+  width: 100%;
+  height: 100%;
+  font-family: "Droid Sans", arial, verdana, sans-serif;
+	font-weight: 700;
+	color: #ff6;
+	background-color: #000;
+	overflow: hidden;
+}
+
+a{
+	height: 8px;
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+	font-size: x-small;
+    margin-top: 1px;
+	background: black;
+	color: #ffcf4d;
+
+  }
+  
+a:hover
+  {
+    background: #ffcf4d;
+	color: black;
+    border: 1px solid rgba(255, 0, 88, 0.4);
+    box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+  }
+
+p#start
+{
+	position: relative;
+	width: 16em;
+	font-size: 200%;
+	font-weight: 400;
+	margin: 20% auto;
+	color: #4ee;
+	opacity: 0;
+	z-index: 1;
+	-webkit-animation: intro 2s ease-out;
+	-moz-animation: intro 2s ease-out;
+	-ms-animation: intro 2s ease-out;
+	-o-animation: intro 2s ease-out;
+	animation: intro 2s ease-out;
+}
+
+@-webkit-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-moz-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-ms-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-o-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+h1
+{
+	position: absolute;
+	width: 2.6em;
+	left: 50%;
+	top: 25%;
+	font-size: 10em;
+	text-align: center;
+	margin-left: -1.3em;
+	line-height: 0.8em;
+	letter-spacing: -0.05em;
+	color: #000;
+	text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
+	opacity: 0;
+	z-index: 1;
+	-webkit-animation: logo 5s ease-out 2.5s;
+	-moz-animation: logo 5s ease-out 2.5s;
+	-ms-animation: logo 5s ease-out 2.5s;
+	-o-animation: logo 5s ease-out 2.5s;
+	animation: logo 5s ease-out 2.5s;
+}
+
+h1 sub
+{
+	display: block;
+	font-size: 0.3em;
+	letter-spacing: 0;
+	line-height: 0.8em;
+}
+
+@-webkit-keyframes logo {
+	0% { -webkit-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -webkit-transform: scale(0.1); opacity: 0; }
+}
+
+@-moz-keyframes logo {
+	0% { -moz-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -moz-transform: scale(0.1); opacity: 0; }
+}
+
+@-ms-keyframes logo {
+	0% { -ms-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -ms-transform: scale(0.1); opacity: 0; }
+}
+
+@-o-keyframes logo {
+	0% { -o-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -o-transform: scale(0.1); opacity: 0; }
+}
+
+@keyframes logo {
+	0% { transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { transform: scale(0.1); opacity: 0; }
+}
+
+/* the interesting 3D scrolling stuff */
+#titles
+{
+	position: absolute;
+	width: 18em;
+	height: 50em;
+	bottom: 0;
+	left: 50%;
+	margin-left: -9em;
+	font-size: 350%;
+	text-align: justify;
+	overflow: hidden;
+	-webkit-transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-o-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transform: perspective(300px) rotateX(20deg);
+	-moz-transform: perspective(300px) rotateX(20deg);
+	-ms-transform: perspective(300px) rotateX(20deg);
+	-o-transform: perspective(300px) rotateX(20deg);
+	transform: perspective(300px) rotateX(20deg);
+}
+
+#titles:after
+{
+	position: absolute;
+	content: ' ';
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 60%;
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -o-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	pointer-events: none;
+}
+
+#titles p
+{
+	text-align: justify;
+	margin: 0.8em 0;
+}
+
+#titles p.center
+{
+	text-align: center;
+}
+
+#titles a
+{
+	color: #ff6;
+	text-decoration: underline;
+}
+
+#titlecontent
+{
+	position: absolute;
+	top: 100%;
+	-webkit-animation: scroll 130s linear 4s infinite;
+	-moz-animation: scroll 130s linear 4s infinite;
+	-ms-animation: scroll 130s linear 4s infinite;
+	-o-animation: scroll 130s linear 4s infinite;
+	animation: scroll 130s linear 4s infinite;
+}
+
+/* animation */
+@-webkit-keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+@-moz-keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+@-ms-keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+@-o-keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+@keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+
+</style>
+<body>
+	<title>Presents</title>
+	<h2><a href="mug.html">Continue to the rest of your presents---></a></h2>
+  <div style="overflow:hidden; position:absolute; left:0; top:0; width:50px; height:25px;">
+    <div style="margin-top:-290px;">
+    <object width="420" height="315">
+      <param name="movie"></param>
+      <param name="allowFullScreen" value="true"></param>
+      <param name="allowscriptaccess" value="always"></param>
+	  
+    </object>
+    </div>
+  </div>
+ 
+  <div id="titles">
+    <div id="titlecontent">
+      <p class="center">EPISODE 21<br /><br>
+        A LOVE LETTER</p>
+        <p>To my sweet adorable little bear cub🥺🥺</p>      
+        <p>I grew up being that typical little girl who wanted to have a fairytale princess love story. I spent so much time imagining myself getting married to my Prince Charming and having children and living the PERFECT life that everyone would be jealous of. </p>
+        <p>I would literally daydream about this completely unreasonably perfect man coming into my life. This guy was EVERYTHING. The complete dreamy package. He was handsome, smart, funny, kind, sexy and mind-meltingly charming.</p>
+        <p>You make that guy look like a 50 year old dead toad rotting in a pool of poop water.</p>
+        <p>You’re unreal. More than I could ever have dreamed of. You’re so perfect you make me literally question reality?? When Im trying to figure out how someone could be so perfect for me and the odds of me finding that person. The only conclusion I can come to is that this is all a simulation and someone coded you exactly for me.</p>
+        <p>You’re not just funny, you’re the funniEST guy I know. The sexiest by so so far. Not just smart, the smartEST. I’ve had more fun with you just talking on the phone than I’ve ever had with anyone in real life. You make me laugh until I’m in actual painnnn Like omg you literally swooped in and lit up my sad life </p>
+        <p>You make me feel so understood, so cared for, so comfortable, so loved. I am the luckiest girl in the world. </p>
+        <p>Just thinking about you makes me so aggressively overwhelmed at how incredible you are. I look at you in literal awe like looking at a work of art. Admiring the perfect balance of your personality, the amount of hardwork, the talent, the prettiness, the kindness, the thoughtfullness. I feel like you have no idea how one in 8 billion you are</p>
+        <p>You’re a diamond. I’ll never need anything else in my life. I would be happy to be poor with you forever </p>
+        <p>Happy Birthday Shaww I love you the factorial of a billion gazillion trillion jupiters</p>
+		<p></p>
+      </div>
+  </div>
+  <iframe style="visibility:hidden" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>

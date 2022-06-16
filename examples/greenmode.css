@@ -1,0 +1,203 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: consolas;*/
+}
+
+.link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+h1
+{
+    color: #0d240a00;
+    font-size: 190%;
+}
+body
+{
+    overflow:hidden;
+    background-color: #0d240a;
+    display: flex;
+}
+
+.container{
+    place-items: center;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+}
+.container{
+    position: relative;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2em;
+    width: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.372);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .container:before{
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    height: 44px;
+    width: 44px;
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0;
+    filter: blur(5px);
+    background: linear-gradient(45deg, #059408, #6aa90c, #fffb00, #04ff00, #aeff00);
+    background-size: 400%;
+    transition: opacity .3s ease-in-out;
+    animation: animate 20s linear infinite;
+  }
+  .container:hover:before{
+    opacity: 1;
+  }
+  .container:hover:active{
+    background: none;
+  }
+  .container:hover:active:before{
+    filter: blur(2px);
+  }
+
+.container1{
+    place-items: center;
+    top: 20px;
+    left: 10px;
+    bottom: 10px;
+}
+.container1{
+    position: relative;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2em;
+    width: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.372);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .container1:before{
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    height: 44px;
+    width: 44px;
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0;
+    filter: blur(5px);
+    background: linear-gradient(45deg, #059408, #6aa90c, #fffb00, #04ff00, #aeff00);
+    background-size: 400%;
+    transition: opacity .3s ease-in-out;
+    animation: animate 20s linear infinite;
+  }
+  .container1:hover:before{
+    opacity: 1;
+  }
+  .container1:hover:active{
+    background: none;
+  }
+  .container1:hover:active:before{
+    filter: blur(2px);
+  }
+  @keyframes animate {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
+  .container2{
+    place-items: center;
+
+    left: 10px;
+    top: -5px;
+}
+.container2{
+    position: relative;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2em;
+    width: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.372);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .container2:before{
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    height: 44px;
+    width: 44px;
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0;
+    filter: blur(5px);
+    background: linear-gradient(45deg, #059408, #6aa90c, #fffb00, #04ff00, #aeff00);
+    background-size: 400%;
+    transition: opacity .3s ease-in-out;
+    animation: animate 20s linear infinite;
+  }
+  .container2:hover:before{
+    opacity: 1;
+  }
+  .container2:hover:active{
+    background: none;
+  }
+  .container2:hover:active:before{
+    filter: blur(2px);
+  }
+  @keyframes animate {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
+
+.transition-fade{
+  opacity:1;
+  transition:500ms;
+  transform: translateX(0);
+}
+
+html.is-animating .transition-fade{
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade{
+  opacity:0;
+  transform: translateX(0);
+}

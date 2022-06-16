@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset= "UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Game</title>
+<link rel="stylesheet" href="gamemode.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript">
+    var S_nos = ["922","666","100","229","21","141","5","77","1214","481","106","718","30","298","41","462","102","341","156","848","428","331","69","16","98","142","84","171","682","272","30","43","65","410","59","69","217","235","1345","827","22","68","29","31","97","152","143","183","72","1826","84","27","130","10","13193"]
+    var P_nos = ["1036","900","72","228","54","312","3","102","1188","303","89","811","59","471","95","868","76","278","89","728","114","345","97","3","93","105","172","220","520","303","21","32","92","354","69","91","341","314","1115","774","61","56","9","35","62","120","133","270","24","1114","88","22","174","25","13065"]
+    var words = ["love","hate","dog","cat","cheese","coffee","mando","i miss you","ew","sex","boob","bye","yuck","cute","adorable","aww","butt","pretty","sexy","ass","damn","morning","goodnight","good night","ugly","fat","shut up","fuck","wtf","hell","jesus","cookie","gym","hot","attractive","period","sad","happy","eat","sleep","hungry","horny","sexy time","pregnant","cheat","kiss","hug","sweet","lovey","call","pick up","naked","birthday","paneer","hi"]
+    var i=1;
+    var wrd = document.getElementById('label_1');
+
+      function next_word() {
+        var curr1=words.indexOf(document.getElementById('label_1').innerHTML)
+        if(curr1==54)
+        {
+          i=0;
+        }
+          document.getElementById('shaw').style.background="rgba(255, 255, 255, 0.372)";
+          document.getElementById('preetika').style.background="rgba(255, 255, 255, 0.372)";
+          document.getElementById('shaw').innerHTML="Shouryan";
+          document.getElementById('preetika').innerHTML="Preetika";
+          document.getElementById('label_1').innerHTML=words[i];
+          i=i+1;
+
+        
+      }
+      function reveal(btn) {
+        var curr=words.indexOf(document.getElementById('label_1').innerHTML)
+        if(btn.id=='preetika')
+        {
+        if(parseInt(S_nos[curr])>parseInt(P_nos[curr]))
+        {
+          document.getElementById('preetika').style.background="rgba(255, 0, 0, 0.551)";
+        }
+        else{document.getElementById('preetika').style.background="rgba(10, 103, 27, 0.551)";}
+        }
+
+        if(btn.id=='shaw')
+        {
+          if(parseInt(S_nos[curr])>parseInt(P_nos[curr]))
+        {
+          document.getElementById('shaw').style.background="rgba(10, 103, 27, 0.551)";
+        }
+        else{document.getElementById('shaw').style.background="rgba(255, 0, 0, 0.551)";}
+        }
+
+          document.getElementById('shaw').innerHTML=S_nos[curr];
+          document.getElementById('preetika').innerHTML=P_nos[curr];
+        
+      }
+
+      function toggleTheme() {
+        var theme = document.getElementsByTagName('link')[0];
+        var mode = document.getElementsByTagName('i')[0];
+        if (theme.getAttribute('href') == 'gamemode.css') {
+            theme.setAttribute('href', 'gamemode_dark.css');
+            mode.setAttribute('class','fa fa-sun-o');
+        } else {
+            theme.setAttribute('href', 'gamemode.css');
+            mode.setAttribute('class','fa fa-moon-o');
+        }
+    }
+</script>
+
+</head>
+<body>
+ 
+<section>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+</section>
+
+<div class="container" onclick="toggleTheme()"><i class="fa fa-moon-o"></i></div>
+
+<label id="label_1">love</label>
+      <div class="container3" id="preetika" onclick="reveal(this)">
+        Preetika
+      </div>
+      <div class="container4" id="shaw" onclick="reveal(this)">
+        Shouryan
+      </div>
+      <div class="container5" onclick="next_word()"><i class="fa fa-arrow-right-long"></i>
+      </div>
+      <div class="container6"><i class="fa fa-house"></i><a href="homepage.html">
+      <span class="link"></span>
+      </a></div>
+          
+
+     
+
+
+</body>
+</html>

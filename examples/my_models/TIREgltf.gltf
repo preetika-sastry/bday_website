@@ -1,0 +1,614 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.7.33",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Circle",
+            "rotation" : [
+                0,
+                0,
+                0.9999569654464722,
+                0.009276928380131721
+            ],
+            "scale" : [
+                0.29950186610221863,
+                0.29950186610221863,
+                0.29950186610221863
+            ],
+            "translation" : [
+                -0.2881336212158203,
+                0.6057992577552795,
+                0.4061467945575714
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "uploads_files_2448833_knob1_Default",
+            "rotation" : [
+                0.49554941058158875,
+                0.5044113397598267,
+                -0.5044113993644714,
+                0.4955493211746216
+            ],
+            "scale" : [
+                0.032021962106227875,
+                0.032021962106227875,
+                0.032021962106227875
+            ],
+            "translation" : [
+                0.06466962397098541,
+                1.0806740522384644,
+                0.4401523470878601
+            ]
+        },
+        {
+            "mesh" : 2,
+            "name" : "goodyeargt_tyre",
+            "rotation" : [
+                0.9999977350234985,
+                0,
+                0,
+                0.002137496368959546
+            ],
+            "scale" : [
+                0.0023072920739650726,
+                0.0023072927724570036,
+                0.0023072927724570036
+            ],
+            "translation" : [
+                -0.28116220235824585,
+                0.8064270615577698,
+                0.41911762952804565
+            ]
+        },
+        {
+            "mesh" : 3,
+            "name" : "goodyeargt_tyre.001",
+            "rotation" : [
+                0.9999977350234985,
+                0,
+                0,
+                0.002137496368959546
+            ],
+            "scale" : [
+                0.0023072920739650726,
+                0.0023072927724570036,
+                0.0023072927724570036
+            ],
+            "translation" : [
+                -0.28116220235824585,
+                1.2734684944152832,
+                0.42177146673202515
+            ]
+        },
+        {
+            "mesh" : 4,
+            "name" : "goodyeargt_tyre.002",
+            "rotation" : [
+                0.9999977350234985,
+                0,
+                0,
+                0.002137496368959546
+            ],
+            "scale" : [
+                0.0023072920739650726,
+                0.0023072927724570036,
+                0.0023072927724570036
+            ],
+            "translation" : [
+                -0.30797111988067627,
+                1.5051624774932861,
+                0.3907729387283325
+            ]
+        },
+        {
+            "mesh" : 5,
+            "name" : "goodyeargt_tyre.003",
+            "rotation" : [
+                0.9999977350234985,
+                0,
+                0,
+                0.002137496368959546
+            ],
+            "scale" : [
+                0.0023072920739650726,
+                0.0023072927724570036,
+                0.0023072927724570036
+            ],
+            "translation" : [
+                -0.3096221685409546,
+                1.041677474975586,
+                0.3907729387283325
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.004",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "metallicFactor" : 0
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.007",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.17889907956123352
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.001",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.002",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.003",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Circle.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "uploads_files_2448833_knob1_Default",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        },
+        {
+            "name" : "goodyeargt_tyre",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "NORMAL" : 9,
+                        "TEXCOORD_0" : 10
+                    },
+                    "indices" : 11,
+                    "material" : 2
+                }
+            ]
+        },
+        {
+            "name" : "goodyeargt_tyre.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 12,
+                        "NORMAL" : 13,
+                        "TEXCOORD_0" : 14
+                    },
+                    "indices" : 11,
+                    "material" : 3
+                }
+            ]
+        },
+        {
+            "name" : "goodyeargt_tyre.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 15,
+                        "NORMAL" : 16,
+                        "TEXCOORD_0" : 17
+                    },
+                    "indices" : 11,
+                    "material" : 4
+                }
+            ]
+        },
+        {
+            "name" : "goodyeargt_tyre.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 18,
+                        "NORMAL" : 19,
+                        "TEXCOORD_0" : 20
+                    },
+                    "indices" : 11,
+                    "material" : 5
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 32,
+            "max" : [
+                1,
+                0,
+                1
+            ],
+            "min" : [
+                -1,
+                0,
+                -1
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 32,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 32,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 90,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 1326,
+            "max" : [
+                1.8077068328857422,
+                6.646421432495117,
+                11.499425888061523
+            ],
+            "min" : [
+                -1.7808021306991577,
+                -0.8251651525497437,
+                -11.499425888061523
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 1326,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 1326,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 7296,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 83872,
+            "max" : [
+                155.4399871826172,
+                88.74903869628906,
+                155.43991088867188
+            ],
+            "min" : [
+                -155.4399871826172,
+                -24.96845245361328,
+                -155.43991088867188
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 83872,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 83872,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5125,
+            "count" : 301272,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 12,
+            "componentType" : 5126,
+            "count" : 83872,
+            "max" : [
+                155.4399871826172,
+                88.74903869628906,
+                155.43991088867188
+            ],
+            "min" : [
+                -155.4399871826172,
+                -24.96845245361328,
+                -155.43991088867188
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 13,
+            "componentType" : 5126,
+            "count" : 83872,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 14,
+            "componentType" : 5126,
+            "count" : 83872,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 15,
+            "componentType" : 5126,
+            "count" : 83872,
+            "max" : [
+                155.4399871826172,
+                88.74903869628906,
+                155.43991088867188
+            ],
+            "min" : [
+                -155.4399871826172,
+                -24.96845245361328,
+                -155.43991088867188
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 16,
+            "componentType" : 5126,
+            "count" : 83872,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 17,
+            "componentType" : 5126,
+            "count" : 83872,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 18,
+            "componentType" : 5126,
+            "count" : 83872,
+            "max" : [
+                155.4399871826172,
+                88.74903869628906,
+                155.43991088867188
+            ],
+            "min" : [
+                -155.4399871826172,
+                -24.96845245361328,
+                -155.43991088867188
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 19,
+            "componentType" : 5126,
+            "count" : 83872,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 20,
+            "componentType" : 5126,
+            "count" : 83872,
+            "type" : "VEC2"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 384,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 384,
+            "byteOffset" : 384
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 256,
+            "byteOffset" : 768
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 180,
+            "byteOffset" : 1024
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 15912,
+            "byteOffset" : 1204
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 15912,
+            "byteOffset" : 17116
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 10608,
+            "byteOffset" : 33028
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 14592,
+            "byteOffset" : 43636
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1006464,
+            "byteOffset" : 58228
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1006464,
+            "byteOffset" : 1064692
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 670976,
+            "byteOffset" : 2071156
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1205088,
+            "byteOffset" : 2742132
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1006464,
+            "byteOffset" : 3947220
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1006464,
+            "byteOffset" : 4953684
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 670976,
+            "byteOffset" : 5960148
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1006464,
+            "byteOffset" : 6631124
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1006464,
+            "byteOffset" : 7637588
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 670976,
+            "byteOffset" : 8644052
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1006464,
+            "byteOffset" : 9315028
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1006464,
+            "byteOffset" : 10321492
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 670976,
+            "byteOffset" : 11327956
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 11998932,
+            "uri" : "TIREgltf.bin"
+        }
+    ]
+}

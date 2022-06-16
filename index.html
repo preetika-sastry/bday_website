@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset= "UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Birthday Website</title>
+<link rel="stylesheet" href="lightmode.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="node_modules/swup/dist/swup.min.js"></script>
+<script defer src="script.js"></script>
+<script>
+    function toggleTheme() {
+        var theme = document.getElementsByTagName('link')[0];
+        var mode = document.getElementsByTagName('i')[0];
+        if (theme.getAttribute('href') == 'lightmode.css') {
+            theme.setAttribute('href', 'darkmode.css');
+            mode.setAttribute('class','fa fa-sun-o');
+        } else {
+            theme.setAttribute('href', 'lightmode.css');
+            mode.setAttribute('class','fa fa-moon-o');
+        }
+    }
+</script>
+
+</head>
+<body>
+
+<section>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+</section>
+<div class="container" onclick="toggleTheme()"><i class="fa fa-moon-o" style="font-size:15px" ></i></div>
+
+<main id="swup" class="transition-fade">
+<span><div class="container1">
+    <div class="box">
+      <span></span>
+      <div class="content">
+        <h2>WELCOME TO YOUR BIRTHDAY WEBSITE</h2>
+        <p></p>
+        <a href="homepage.html">Get started --></a>
+      </div>
+    </div>
+  </div>
+</span>
+</main>
+</body>
+</html>

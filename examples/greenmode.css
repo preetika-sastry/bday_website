@@ -23,7 +23,7 @@ h1
 body
 {
     overflow:hidden;
-    background: linear-gradient(to left bottom, #071f07, #094b0f, #21820e, #0d5312, #597d0c) fixed;
+    background: linear-gradient(to left bottom, #071f07, #094b0f, #081e04, #0d5312, #597d0c) fixed;
     display: flex;
 }
 

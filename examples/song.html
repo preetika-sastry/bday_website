@@ -10,100 +10,23 @@
 	</head>
 	<body>
 		<h1>
-		<div class="container"><i class="fa-solid fa-arrow-right-long"></i><a href="painting.html">
+		<div class="container"><i class="fa-solid fa-arrow-right-long"></i><a href="../homepage.html">
 			<span class="link"></span>
 		  </a></div>
 		<div class="container1"><i class="fa-solid fa-arrow-left-long"></i><a href="soapy.html">
 			<span class="link"></span>
 		  </a></div>
 		hello love
-		<div class="container2"><i class="fa-solid fa-house"></i><a href="homepage.html">
+		<div class="container2"><i class="fa-solid fa-house"></i><a href="../homepage.html">
 			<span class="link"></span>
 		  </a></div></h1>
+		  <div class="container3"><i class="fa fa-music"></i><a href="https://soundcloud.com/preetika-sastry/take-on-me/s-tbjZ11bFLCT?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+			<span class="link"></span>
+		  </a></div>
 		<section<div color="dark green" height="100%", width="100px"></div></section>
 		
 		
-		<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
-		<script type="importmap">
-			{ 
-				"imports": {
-					"three": "../build/three.module.js"
-				}
-			}
-		</script>
-		<script type="module">
 
-			import * as THREE from 'three';
-			import { OrbitControls } from './jsm/controls/OrbitControls.js';
-			import { GLTFLoader } from './jsm/loaders/GLTFLoader.js';
-			import { RGBELoader } from './jsm/loaders/RGBELoader.js';
-
-			let camera, scene, renderer;
-
-			init();
-			render();
-
-			function init() {
-
-				const container = document.createElement( 'div' );
-				document.body.appendChild( container );
-
-				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.25, 20 );
-				camera.position.set( -1.6,4.5,3.8 );
-
-				scene = new THREE.Scene();
-
-				new RGBELoader()
-					.setPath( 'textures/equirectangular/' )
-					.load( 'zelda1.hdr', function ( texture ) {
-
-						texture.mapping = THREE.EquirectangularReflectionMapping;
-						scene.background= texture;
-						scene.environment = texture;
-						render();
-						const loader = new GLTFLoader().setPath( 'my_models/' );
-						
-						loader.load( 'music.gltf', function ( gltf ) {
-							scene.scale.set(30,30,30);
-							scene.add( gltf.scene );
-							render();
-						} );
-					} 
-					);
-
-				renderer = new THREE.WebGLRenderer( { antialias: true } );
-				renderer.setPixelRatio( window.devicePixelRatio );
-				renderer.setSize( window.innerWidth, window.innerHeight);
-				renderer.toneMapping = THREE.ACESFilmicToneMapping;
-				renderer.toneMappingExposure = 1;
-				renderer.outputEncoding = THREE.sRGBEncoding;
-				container.appendChild( renderer.domElement );
-
-				const controls = new OrbitControls( camera, renderer.domElement );
-				controls.addEventListener( 'change', render ); 
-				controls.minDistance = 2;
-				controls.maxDistance = 10;
-				controls.target.set( 0, 0, - 0.2 );
-				controls.update();
-
-				window.addEventListener( 'resize', onWindowResize );
-
-			}
-
-			function onWindowResize() {
-
-				camera.aspect = (window.innerWidth/2) / (window.innerHeight/2);
-				camera.updateProjectionMatrix();
-				renderer.setSize( window.innerWidth/2, window.innerHeight/2 );
-				render();
-
-			}
-			function render() {
-				
-				renderer.render( scene, camera );
-			
-			}
-		</script>
-
+		
 	</body>
 </html>

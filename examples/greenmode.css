@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*font-family: consolas;*/
+    font-family: consolas;
 }
 
 .link {
@@ -19,6 +19,7 @@ h1
 {
     color: #0d240a00;
     font-size: 190%;
+font-family: consolas;
 }
 body
 {
@@ -187,13 +188,13 @@ body
   }
   .container3{
     place-items: center;
-
-    left: 25%;
-    top: 150px;
+    font-family: consolas;
+    left: 1px;
+    top: 10px;
 }
 .container3{
     position: relative;
-    height: 250px;
+    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,15 +207,15 @@ body
     background: rgba(255, 255, 255, 0.372);
     cursor: pointer;
     border-radius: 5px;
-    font-size: 70px;
-    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-family: consolas;
   }
   .container3:before{
     position: absolute;
     content: '';
     top: -2px;
     left: -2px;
-    height: 254px;
+    height: 144px;
     width: 404px;
     border-radius: 5px;
     z-index: -1;
